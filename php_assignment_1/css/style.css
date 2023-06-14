@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Body styles */
+body {
+  font-family: 'Sora';
+  background-color: #f0f0f0;
+  ;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  text-align: left;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Sora';
+  color: black;
+}
+
+
+header p {
+  text-align: left;
+  margin: 0 auto;
+  font-family: 'Sora';
+  color: black;
+}
+
+header nav {
+  text-align: left;
+  font-family: 'Sora';
+  color: black;
+}
+
+header nav ul {
+  padding-left: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-right: 20px;
+  text-align: left;
+  font-family: 'Sora';
+  color: black;
+}
+
+header nav li {
+  display: inline-block;
+  font-family: 'Sora';
+  color: black;
+}
+
+header nav a {
+  display: block;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul ul {
+  position: absolute;
+  background-color: white;
+  width: 15em;
+  z-index: 1;
+  border: 3px solid black;
+  text-align: left;
+}
+
+header nav ul ul li {
+  display: block;
+}
+
+header nav li:hover ul {
+  left: auto;
+}
+
+header nav a:link {
+  padding: 0.5em;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+header nav a:visited {
+  color: rgb(0, 0, 0);
+}
+
+header nav a:focus {
+  background-color: orange;
+}
+
+header nav a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.signup-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 900px;
+}
+
+.left-container {
+  background: #ffffff;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+
+.left-container h2 {
+  padding-left: 15px;
+  color: black;
+  display: inline-block;
+  font-size: 19px;
+  text-align: center;
+}
+
+.left-container p {
+  padding-left: 15px;
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.left-container .puppy {
+  bottom: -5px;
+  position: absolute;
+  text-align: center;
+}
+
+.left-container .puppy:before {
+  background: #ffffff;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.left-container img {
+  filter: sepia(100%);
+  width: 70%;
+}
+
+.right-container {
+  background: #6a6767;
+  display: grid;
+  grid-template-areas: "." ".";
+  width: 500px;
+}
+
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.right-container .set {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.right-container input {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+}
+
+.right-container input,
+.right-container label {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.right-container {
+  padding: 40px;
+}
+
+.right-container label,
+.right-container input,
+.right-container .pets-photo {
+  width: 176px;
+}
+
+.right-container .pets-photo label {
+  align-items: center;
+  display: grid;
+  grid-template-areas: ". .";
+}
+
+.right-container .pets-photo input label {
+  border: none;
+  border-radius: 50%;
+  height: 38px;
+  margin-right: 10px;
+  outline: none;
+  width: 38px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+.right-container .pets-weight .radio-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right-container {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  padding: 5px 40px;
+  margin-bottom: 0px;
+}
+
+.right-container button {
+  border: 1px solid rgb(0, 0, 0);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+
+
+  justify-items: center;
+
+
+}
+
+.right-container #submit {
+  background: #fff;
+  transition: 0.2s all ease-in-out;
+
+  font-family: 'Sora';
+  font-size: 15px;
+
+}
+
+.right-container #submit:hover {
+  background: grey;
+  color: white;
+}
+
+.pets-weight {
+  margin-bottom: 35px;
+}
+
+.pets-name label,
+.pets-breed label,
+.pets-birthday label,
+.pets-gender label,
+.pets-spayed-neutered label,
+.pets-weight label,
+.pets-photo label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-container {
+  background: #fff;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.radio-container label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 80px;
+}
+
+.radio-container input[type=radio] {
+  display: none;
+}
+
+.radio-container input[type=radio]:checked+label {
+  background: gray;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+footer {
+  font-family: 'Sora';
+}
+
+footer p {
+  font-family: 'Sora';
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS for table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Sora';
+  background-color: #f0f0f0;
+  ;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* CSS for container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* CSS for header and navigation */
+header {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* CSS for table responsiveness */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  nav li {
+    display: block;
+    margin: 0 auto;
+  }
+}
